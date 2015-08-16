@@ -5,13 +5,9 @@
 
 #define MAX_QUERY_LEN 256
 
-// libsqlite3-dev
-
-// gcc -o c_sqlite_json main.c -lsqlite3 -std=c99
 
 typedef enum { FALSE_B, TRUE_B } bool_t;
 bool_t first_json_row;
-
 
 // Functions
 
@@ -51,7 +47,7 @@ int main(int argc, char *argv[])
 
     return 0;
 error:
-    printf("error: database parameter\n");
+    printf("error\n");
     return -1;
 }
 
